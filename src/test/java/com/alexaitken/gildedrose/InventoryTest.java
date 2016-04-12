@@ -1,13 +1,10 @@
-package test.com.alexaitken.gildedrose;
-
-import static org.junit.Assert.*;
-
-import java.util.Arrays;
+package com.alexaitken.gildedrose;
 
 import org.junit.Test;
 
-import com.alexaitken.gildedrose.Inventory;
-import com.alexaitken.gildedrose.Item;
+import java.util.Arrays;
+
+import static org.junit.Assert.assertEquals;
 
 
 public class InventoryTest {
