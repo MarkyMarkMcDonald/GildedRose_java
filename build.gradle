@@ -1,4 +1,19 @@
-apply plugin: 'java'
+buildscript {
+    ext.kotlin_version = '1.0.1'
+
+    repositories {
+        jcenter()
+        mavenCentral()
+    }
+
+    dependencies {
+        dependencies {
+            classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        }
+    }
+}
+
+apply plugin: 'kotlin'
 
 repositories {
     jcenter()
@@ -6,5 +21,6 @@ repositories {
 }
 
 dependencies {
+    compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
     testCompile "junit:junit:4.11"
 }
